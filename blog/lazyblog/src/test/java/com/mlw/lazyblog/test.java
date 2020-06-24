@@ -15,9 +15,9 @@ public class test {
     public void testEncode(){
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         String hashPass = bCryptPasswordEncoder.encode("admin");
+        System.out.println(hashPass);
         boolean admin = bCryptPasswordEncoder.matches("admin", "$2a$10$Es/Uylam3Q0iN2yVsg9aLeeksFXUfNX4MfnrtSTROIMwJa6gFnmni");
         System.out.println(admin);
 
-        System.out.println(admin);
     }
 }

@@ -33,7 +33,7 @@ public class User implements UserDetails {
                 forEach((String authority)->{
                     list.add(new SimpleGrantedAuthority(authority));
                 });
-        log.info(this.password);
+//        log.info(this.password);
         return list;
     }
 
